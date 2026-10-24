@@ -1,0 +1,422 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0f172a;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+}
+
+.logo i{
+    font-size:2rem;
+    color:#38bdf8;
+}
+
+.logo h2{
+    font-size:1.8rem;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:90vh;
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#2563eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    color:white;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:white;
+    color:#2563eb;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.nosotros{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.nosotros h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.nosotros p{
+    max-width:900px;
+    margin:auto;
+    color:#64748b;
+    font-size:1.1rem;
+}
+
+.beneficios{
+    padding:100px 10%;
+    background:white;
+}
+
+.beneficios h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.beneficio{
+    background:#f8fafc;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.beneficio:hover{
+    transform:translateY(-10px);
+}
+
+.beneficio i{
+    font-size:3rem;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.beneficio h3{
+    margin-bottom:10px;
+}
+
+.tiendas{
+    padding:100px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.titulo h2{
+    font-size:2.5rem;
+}
+
+.titulo p{
+    color:#64748b;
+}
+
+#buscador{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:40px;
+    font-size:1rem;
+}
+
+#buscador:focus{
+    outline:2px solid #2563eb;
+}
+
+#contenedorTiendas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid #e2e8f0;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+.card button{
+    width:100%;
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}
+
+.catalogo{
+    background:white;
+    padding:100px 10%;
+}
+
+.oculto{
+    display:none;
+}
+
+.volver{
+    background:#0f172a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-bottom:25px;
+}
+
+#nombreTienda{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+#descripcionTienda{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+#productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.producto{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:20px;
+    border-left:6px solid #2563eb;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.producto h4{
+    margin-bottom:10px;
+}
+
+.producto span{
+    color:#2563eb;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.whatsapp-btn:hover{
+    opacity:.9;
+}
+
+.contacto{
+    padding:100px 10%;
+}
+
+.contacto h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+input,
+textarea{
+    padding:16px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:1rem;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:16px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+#respuesta{
+    margin-top:20px;
+    text-align:center;
+    color:#16a34a;
+    font-weight:bold;
+}
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h3{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .nosotros,
+    .beneficios,
+    .tiendas,
+    .catalogo,
+    .contacto{
+        padding:70px 20px;
+    }
+
+    #contenedorTiendas{
+        grid-template-columns:1fr;
+    }
+
+    #productos{
+        grid-template-columns:1fr;
+    }
+}
