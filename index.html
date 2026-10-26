@@ -14,175 +14,180 @@
 </head>
 <body>
 
-    <header>
+<header>
 
-        <div class="logo">
-            <i class="fa-solid fa-qrcode"></i>
-            <h2>Punto Express</h2>
-        </div>
+    <div class="logo">
+        <i class="fa-solid fa-qrcode"></i>
+        <h2>Punto Express</h2>
+    </div>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#tiendas">Tiendas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#tiendas">Tiendas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-    </header>
+</header>
 
-    <section class="hero" id="inicio">
+<section class="hero" id="inicio">
 
-        <div class="hero-content">
+    <div class="hero-content">
 
-            <span class="badge">
-                Plataforma de Catálogos Digitales
-            </span>
+        <span class="badge">
+            Plataforma de Catálogos Digitales
+        </span>
 
-            <h1>
-                Encuentra Tiendas Locales
-                Desde un Solo Código QR
-            </h1>
-
-            <p>
-                Explora negocios locales, revisa sus productos
-                y contacta directamente cada tienda.
-            </p>
-
-            <a href="#tiendas" class="btn">
-                Explorar Tiendas
-            </a>
-
-        </div>
-
-    </section>
-
-    <section class="nosotros" id="nosotros">
-
-        <h2>¿Qué es Punto Express?</h2>
+        <h1>
+            Encuentra Tiendas Locales
+            Desde un Solo Código QR
+        </h1>
 
         <p>
-            Punto Express es una plataforma que reúne negocios locales
-            en un solo lugar. Los clientes escanean un código QR,
-            seleccionan una tienda y pueden consultar su catálogo
-            digital de manera rápida y sencilla.
+            Explora negocios locales, revisa sus productos
+            y contacta directamente cada tienda.
         </p>
 
-    </section>
+        <a href="#tiendas" class="btn">
+            Explorar Tiendas
+        </a>
 
-    <section class="beneficios">
+    </div>
 
-        <h2>¿Por qué usar Punto Express?</h2>
+</section>
 
-        <div class="beneficios-grid">
+<section class="nosotros" id="nosotros">
 
-            <div class="beneficio">
-                <i class="fa-solid fa-store"></i>
-                <h3>Más Visibilidad</h3>
-                <p>Ayuda a los comercios a tener presencia digital.</p>
-            </div>
+    <h2>¿Qué es Punto Express?</h2>
 
-            <div class="beneficio">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <h3>Acceso Fácil</h3>
-                <p>Compatible con celulares, tablets y computadores.</p>
-            </div>
+    <p>
+        Punto Express es una plataforma que reúne negocios locales
+        en un solo lugar. Los clientes escanean un código QR,
+        seleccionan una tienda y pueden consultar su catálogo
+        digital de manera rápida y sencilla.
+    </p>
 
-            <div class="beneficio">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>Contacto Directo</h3>
-                <p>Comunicación inmediata con cada negocio.</p>
-            </div>
+</section>
 
+<section class="beneficios">
+
+    <h2>¿Por qué usar Punto Express?</h2>
+
+    <div class="beneficios-grid">
+
+        <div class="beneficio">
+            <i class="fa-solid fa-store"></i>
+            <h3>Más Visibilidad</h3>
+            <p>Ayuda a los comercios a tener presencia digital.</p>
         </div>
 
-    </section>
-
-    <section class="tiendas" id="tiendas">
-
-        <div class="titulo">
-            <h2>Tiendas Registradas</h2>
-
-            <p>
-                Selecciona una tienda para consultar su catálogo.
-            </p>
+        <div class="beneficio">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Acceso Fácil</h3>
+            <p>Compatible con celulares, tablets y computadores.</p>
         </div>
+
+        <div class="beneficio">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>Contacto Directo</h3>
+            <p>Comunicación inmediata con cada negocio.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="tiendas" id="tiendas">
+
+    <div class="titulo">
+
+        <h2>Tiendas Registradas</h2>
+
+        <p>
+            Selecciona una tienda para consultar su catálogo.
+        </p>
+
+    </div>
+
+    <input
+        type="text"
+        id="buscador"
+        placeholder="Buscar tienda..."
+    >
+
+    <div id="contenedorTiendas"></div>
+
+</section>
+
+<section id="catalogoSeccion" class="catalogo oculto">
+
+    <button id="volver" class="volver">
+        <i class="fa-solid fa-arrow-left"></i>
+        Volver a Tiendas
+    </button>
+
+    <h2 id="nombreTienda"></h2>
+
+    <p id="descripcionTienda"></p>
+
+    <div id="productos"></div>
+
+    <a
+        id="btnWhatsapp"
+        class="whatsapp-btn"
+        target="_blank"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+        Contactar Tienda
+    </a>
+
+</section>
+
+<section id="contacto" class="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <form id="formulario">
 
         <input
             type="text"
-            id="buscador"
-            placeholder="Buscar tienda..."
+            id="nombre"
+            placeholder="Nombre completo"
+            required
         >
 
-        <div id="contenedorTiendas"></ fa-arrow-left"></i>
-            Volver a Tiendas
+        <input
+            type="email"
+            id="correo"
+            placeholder="Correo electrónico"
+  saje"
+            rows="5"
+            placeholder="Escribe tu mensaje"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Enviar
         </button>
 
-        <h2 id="nombreTienda"></h2>
+    </form>
 
-        <p id="descripcionTienda"></p>
+    <div id="respuesta"></div>
 
-        <div id="productos"></div>
+</section>
 
-        <a
-            id="btnWhatsapp"
-            class="whatsapp-btn"
-            target="_blank"
-        >
-            <i class="fa-brands fa-whatsapp"></i>
-            Contactar Tienda
-        </a>
+<footer>
 
-    </section>
+    <h3>Punto Express</h3>
 
-    <section id="contacto" class="contacto">
+    <p>
+        Conectando clientes y comercios locales mediante
+        catálogos digitales y códigos QR.
+    </p>
 
-        <h2>Contáctanos</h2>
-
-        <form id="formulario">
-
-            <input
-                type="text"
-                id="nombre"
-                placeholder="Nombre completo"
-                required
-            >
-
-            <input
-                type="email"
-                id="correo"
-                placeholder="Correo electrónico"
-                required
-            >
-
-            <textarea
-                id="mensaje"
-                rows="5"
-                placeholder="Escribe tu mensaje"
-                required
-            ></textarea>
-
-            <button type="submit">
-                Enviar
-            </button>
-
-        </form>
-
-        <div id="respuesta"></div>
-
-    </section>
-
-    <footer>
-
-        <h3>Punto Express</h3>
-
-        <p>
-            Conectando clientes y comercios locales mediante
-            catálogos digitales y códigos QR.
-        </p>
-
-    </footer>
+</footer>
 
 </body>
 </html>
