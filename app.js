@@ -287,4 +287,5 @@ document
             `✅ Gracias ${nombre}, hemos recibido tu mensaje correctamente.`;
 
         this.reset();
-    });
+    }
+);
