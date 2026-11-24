@@ -186,3 +186,33 @@ textarea{
 form button{
     margin-top: 20px;
 }
+form{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea{
+    resize: none;
+}
+
+#mensajeFormulario{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}

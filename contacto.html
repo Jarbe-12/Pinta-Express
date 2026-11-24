@@ -9,8 +9,10 @@
 </head>
 
 <body>
+
     <header>
-        <h2>Contacto</h2>
+        <h2>Pinta Express</h2>
+
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -18,47 +20,53 @@
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
-
     </header>
+
     <main>
 
-    <section>
-        <h1>Contáctanos</h1>
+        <section>
+            <h1>Contáctanos</h1>
 
-        <p>
-            ¿Tienes un negocio y quieres llevarlo al mundo digital?
-            Ponte en contacto con nosotros.
-        </p>
-    </section>
+            <p>
+                ¿Tienes un negocio de ropa y quieres digitalizar tu catálogo?
+                Ponte en contacto con nosotros y conoce cómo Pinta Express puede ayudarte.
+            </p>
+        </section>
 
-    <section>
+        <section>
 
-        <form>
+            <form id="formularioContacto">
 
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre">
 
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo">
 
-            <label for="negocio">Nombre del negocio</label>
-            <input type="text" id="negocio">
+                <label for="negocio">Nombre del negocio</label>
+                <input type="text" id="negocio">
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="5"></textarea>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="5"></textarea>
 
-            <button type="submit">Enviar solicitud</button>
+                <p id="mensajeFormulario"></p>
 
-        </form>
+                <button type="submit">
+                    Enviar solicitud
+                </button>
 
-    </section>
+            </form>
 
-</main>
+        </section>
+
+    </main>
+
     <footer>
         <p>&copy; 2026 Pinta Express. Todos los derechos reservados.</p>
-
         <p>Bogotá, Colombia</p>
     </footer>
+
+    <script src="js/contacto.js"></script>
 
 </body>
 
