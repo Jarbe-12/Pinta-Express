@@ -39,7 +39,13 @@ tiendas.forEach(tienda => {
 
             <p>${tienda.descripcion}</p>
 
-            <button>Ver Catálogo</button>
+            <button onclick="seleccionarTienda('${tienda.nombre}')">
+                Ver Catálogo
+            </button>
         </article>
     `;
 });
+function seleccionarTienda(nombre){
+    sessionStorage.setItem("tiendaSeleccionada", nombre);
+    window.location.href = "contacto.html";
+}
