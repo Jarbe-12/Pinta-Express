@@ -216,3 +216,83 @@ textarea{
     text-align: center;
     font-weight: bold;
 }
+
+@media (max-width: 992px){
+
+    nav{
+        padding: 20px 30px;
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .contenedor-tiendas{
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav{
+        padding: 20px;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 2.3rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    section{
+        padding: 25px;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    button,
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+}
