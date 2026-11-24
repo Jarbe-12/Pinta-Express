@@ -12,17 +12,15 @@ body{
 
 nav{
     background-color: #0f4c81;
-    padding: 20px 60px;
+    padding: 20px 80px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 nav ul{
     list-style: none;
-    text-align: center;
-}
-
-nav li{
-    display: inline-block;
-    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
 
 nav a{
@@ -30,33 +28,44 @@ nav a{
     color: white;
     font-size: 18px;
     font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
 nav a:hover{
-    color: #d6e9ff;
+    background-color: rgba(255,255,255,0.15);
 }
 
 main{
     width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 50px auto;
+}
+
+section{
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #0f4c81;
     margin-bottom: 20px;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #0f4c81;
     margin-bottom: 15px;
 }
 
 h3{
+    font-size: 1.5rem;
     color: #0f4c81;
     margin-bottom: 10px;
 }
@@ -67,41 +76,43 @@ p{
     margin-bottom: 15px;
 }
 
-button{
-    background-color: #1d70b8;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover{
-    background-color: #0f4c81;
-}
-
+button,
 .btn{
     display: inline-block;
     background-color: #1d70b8;
     color: white;
     text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 8px;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+button:hover,
 .btn:hover{
     background-color: #0f4c81;
-}
-
-section{
-    margin: 60px 0;
+    transform: translateY(-2px);
 }
 
 .contenedor{
     background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+footer{
+    background-color: #0f4c81;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 8px 0;
+    color: white;
 }
