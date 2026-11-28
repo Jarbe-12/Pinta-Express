@@ -296,3 +296,10 @@ textarea{
     }
 
 }
+#btnWhatsapp{
+    margin-top: 20px;
+}
+
+#btnWhatsapp:hover{
+    background-color: #25D366;
+}

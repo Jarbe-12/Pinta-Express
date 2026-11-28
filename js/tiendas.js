@@ -32,9 +32,19 @@ const tiendas = [
 
 const contenedor = document.getElementById("contenedorTiendas");
 
+function seleccionarTienda(nombre) {
+
+    sessionStorage.setItem("tiendaSeleccionada", nombre);
+
+    window.location.href = "catalogo.html";
+}
+
 tiendas.forEach(tienda => {
+
     contenedor.innerHTML += `
+
         <article class="tarjeta">
+
             <h3>${tienda.nombre}</h3>
 
             <p>${tienda.descripcion}</p>
@@ -42,10 +52,8 @@ tiendas.forEach(tienda => {
             <button onclick="seleccionarTienda('${tienda.nombre}')">
                 Ver Catálogo
             </button>
+
         </article>
+
     `;
 });
-function seleccionarTienda(nombre){
-    sessionStorage.setItem("tiendaSeleccionada", nombre);
-    window.location.href = "contacto.html";
-}
